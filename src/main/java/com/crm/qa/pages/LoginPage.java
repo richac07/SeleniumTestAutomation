@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+//Updated by Richa
 public class LoginPage extends TestBase {
 
     //Page Factory - OR:
