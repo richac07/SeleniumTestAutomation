@@ -1,7 +1,6 @@
-package com.crm.qa.util;
+package com.swaglab.qa.util;
 
 import java.io.IOException;
-import java.security.cert.CertificateRevokedException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -9,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-import com.crm.qa.base.TestBase;
+import com.swaglab.qa.base.TestBase;
 // import sun.lwawt.macosx.CSystemTray;
 
 public class WebEventListener extends TestBase implements WebDriverEventListener {

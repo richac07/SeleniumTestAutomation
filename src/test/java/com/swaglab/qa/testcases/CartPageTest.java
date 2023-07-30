@@ -1,9 +1,9 @@
-package com.crm.qa.testcases;
+package com.swaglab.qa.testcases;
 
-import com.crm.qa.base.TestBase;
-import com.crm.qa.pages.CartPage;
-import com.crm.qa.pages.HomePage;
-import com.crm.qa.pages.LoginPage;
+import com.swaglab.qa.base.TestBase;
+import com.swaglab.qa.pages.CartPage;
+import com.swaglab.qa.pages.HomePage;
+import com.swaglab.qa.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

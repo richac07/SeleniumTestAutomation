@@ -1,6 +1,6 @@
-package com.crm.qa.util;
+package com.swaglab.qa.util;
 
-import com.crm.qa.base.TestBase;
+import com.swaglab.qa.base.TestBase;
 //import org.apache.logging.log4j.core.util.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -15,15 +15,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import static org.apache.logging.log4j.core.util.FileUtils.*;
-
 public class TestUtil extends TestBase {
     public static long PAGE_LOAD_TIMEOUT =20;
     public static long IMPLICIT_WAIT = 10;
 
     //Access Data from the TestData
 
-    public static String TESTDATA_EXCEL_PATH="/Users/i331396/Documents/Automation/SeleniumTestAutomation/src/main/java/com/crm/qa/testdata/productNameTestData.xlsx";
+    public static String TESTDATA_EXCEL_PATH="/Users/i331396/Documents/Automation/SeleniumTestAutomation/src/main/java/com/swaglab/qa/testdata/productNameTestData.xlsx";
     static Workbook workbook;
     static Sheet sheet;
     public static Object[][] getTestData(String sheetName){

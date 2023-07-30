@@ -1,6 +1,6 @@
-package com.crm.qa.pages;
+package com.swaglab.qa.pages;
 
-import com.crm.qa.base.TestBase;
+import com.swaglab.qa.base.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

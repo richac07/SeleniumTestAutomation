@@ -1,7 +1,7 @@
-package com.crm.qa.base;
+package com.swaglab.qa.base;
 
-import com.crm.qa.util.TestUtil;
-import com.crm.qa.util.WebEventListener;
+import com.swaglab.qa.util.TestUtil;
+import com.swaglab.qa.util.WebEventListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -24,7 +24,7 @@ public class TestBase {
     public TestBase() {
         try {
             prop = new Properties();
-            FileInputStream ip = new FileInputStream("/Users/i331396/Documents/Automation/SeleniumTestAutomation/src/main/java/com/crm/qa/config/config.properties");
+            FileInputStream ip = new FileInputStream("/Users/i331396/Documents/Automation/SeleniumTestAutomation/src/main/java/com/swaglab/qa/config/config.properties");
             prop.load(ip);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
