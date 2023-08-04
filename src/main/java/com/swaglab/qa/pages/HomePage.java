@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,6 +30,11 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "//span[@class='shopping_cart_badge']")
     WebElement cartValue;
 
+    @FindBy(xpath = "//button[contains(@class, 'MuiButtonBase-root MuiIconButton-root')]")
+    WebElement aboutPageObj;
+
+    WebDriverWait wait;
+
     //Init page object
 
     public HomePage(){
@@ -42,7 +50,8 @@ public class HomePage extends TestBase {
 
         options.click();
         about.click();
-        driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+        wait.until(ExpectedConditions.presenceOfElementLocated((By) aboutPageObj));
+        //driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
         return new AboutPage();
 
     }

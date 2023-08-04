@@ -3,6 +3,7 @@
 <suite name="Selenium Test Automation Test Suite">
     <listeners>
         <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"></listener>
+        <listener class-name="com.swaglab.qa.util.MyTransform"></listener>
     </listeners>
     <test name="Selenium Test Automation Test Cases">
         <classes>

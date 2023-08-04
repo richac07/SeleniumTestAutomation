@@ -26,6 +26,7 @@ public class LoginPageTest extends TestBase {
         Assert.assertEquals(title,"Swag Labs");
     }
 
+    //@Test(priority = 2,retryAnalyzer = com.swaglab.qa.util.RetryAnalyzer.class)
     @Test(priority = 2)
     public void loginTest(){
         homePage = loginPage.login(prop.getProperty("username"),prop.getProperty("password"));

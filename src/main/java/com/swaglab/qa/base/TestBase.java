@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,6 +32,7 @@ public class TestBase {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     public static void initialization(){
@@ -41,6 +43,7 @@ public class TestBase {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver= new ChromeDriver(options);
+
         }
 
         edriver=new EventFiringWebDriver(driver);

@@ -43,7 +43,8 @@ public class HomePageTest extends TestBase {
 
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, dependsOnMethods = "verifyAboutPage")
+
     public void verifyCartPage(){
         cartPage=homePage.gotoCart();
     }

@@ -4,6 +4,7 @@
 
     <listeners>
         <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"></listener>
+        <listener class-name="com.swaglab.qa.util.MyTransform"></listener>
     </listeners>
     <!--    <listeners>-->
     <!--        <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />-->
